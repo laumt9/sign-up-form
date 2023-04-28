@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Sign-up Form</title>
 </head>
 <body>
-    
+    <div class="sidebar">
+        <h1 class="japan">JAPAN</h1>
+        <p class="caption">Photo by 
+            <a class="credit" href="https://unsplash.com/@zyxc">Arif Angga Ibrahim</a> 
+            on Unsplash</p>
+    </div>
+    <div class="content">
+        <div class="information">
+            <p class="disclaimer">This is not a real online service !</p>
+            <p>Sign up now to start planning your trip to Japan </p>
+        </div>
+        <div class="orm">
+            <form>
+                <div class="user-input">
+                    <p class="form-title">Japan awaits you !</p>
+                    <div class="input">
+                        <label for="first">First Name</label>
+                        <input type="text" id="first" name="firstname" required>
+                    </div>
+                    <div class="input">
+                        <label for="last">Last Name</label>
+                        <input type="text" id="last" name="lastname" required>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input">
+                        <label for="phonenumber">Phone Number</label>
+                        <input type="tel" id="phonenumber" name="phonenumber" 
+                               pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="10">
+                    </div>
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="input">
+                        <label for="password2">Confirm Password</label>
+                        <input type="password" id="password2" required>
+                    </div>
+                </div>
+                <div>
+                    <button class="create" type="submit">Create Account</button>
+                </div>
+            </form>
+        </div>
+        <div class="account">
+            <p>Already have an account ? <a class="login" href="">Log in</a></p>
+        </div>
+    </div>
 </body>
 </html>
